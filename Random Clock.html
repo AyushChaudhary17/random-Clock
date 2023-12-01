@@ -1,35 +1,9 @@
 <!DOCTYPE html>
-<html data-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-	
+<html data-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
 	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="./CSS.css">
+	<script src="./file1.js" defer></script>
 	<title>Random Clock | Professional JavaScript</title>
-	<style>
-		body{
-			background-color: rgb(69, 65, 65);
-		}
-		#clock {
-			width: 50%;
-			height: 50vh;
-			position: relative;
-			top: 20%;
-			left: 20%;
-			background-color: black;
-			border-radius: 50px;
-			padding: 2em;
-			box-shadow: 5px 5px 5px gray;
-			
-		}
-
-		#clock p {
-			display: inline-block;
-			width: 50%;
-			position: absolute;
-			font-size: xx-large;
-			/* border:  2px solid red; */
-		}
-	</style>
-
 </head>
 
 <body class="container">
@@ -45,27 +19,5 @@
 			</div>
 		</article>
 	</main>
-
-	<script id="clock.js">
-		const time=document.getElementById("time");
-		const [s,l]=["75%","75%"];
-		const updateTime=()=>{
-			const currentTime=new Date().toLocaleTimeString();
-			const Toprandom=Math.random()*90 + "%";
-			const r=Math.random()*255;
-			const h=Math.random()*365;
-			
-			const leftRandom=Math.random()*90 + "%";
-			time.setAttribute("style",`color : hsl(${h},${s},${l}); top : ${Toprandom}; left : ${leftRandom}`);
-			// time.setAttribute("style","left : " + leftRandom);
-			// time.setAttribute("style","top : " + random);
-			
-			time.textContent=currentTime;
-			
-		}
-		updateTime();
-		setInterval(updateTime,1000);
-	</script>
-
-
-</body></html>
+</body>
+</html>

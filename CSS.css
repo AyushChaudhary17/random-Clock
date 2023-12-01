@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(69, 65, 65);
+}
+#clock {
+    width: 50%;
+    height: 50vh;
+    position: relative;
+    top: 20%;
+    left: 20%;
+    background-color: black;
+    border-radius: 50px;
+    padding: 2em;
+    box-shadow: 5px 5px 5px gray;
+    
+}
+
+#clock p {
+    display: inline-block;
+    width: 50%;
+    position: absolute;
+    font-size: xx-large;
+    /* border:  2px solid red; */
+}
